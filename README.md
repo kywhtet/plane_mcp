@@ -20,10 +20,10 @@ cp .env.example .env
 python -m plane_mcp
 
 # SSE transport (for remote connections)
-python -m plane_mcp --transport sse --port 8000
+python -m plane_mcp --transport sse --port 4200
 
 # HTTP transport (streamable HTTP)
-python -m plane_mcp --transport http --port 8000
+python -m plane_mcp --transport http --port 4200
 ```
 
 ## Environment Variables
@@ -111,7 +111,7 @@ Add to your MCP client config (e.g. `claude_desktop_config.json`):
 First start the server:
 
 ```bash
-python3 -m plane_mcp --transport sse --port 8000
+python3 -m plane_mcp --transport sse --port 4200
 ```
 
 Then configure your MCP client to connect via `mcp-remote`:
@@ -123,7 +123,7 @@ Then configure your MCP client to connect via `mcp-remote`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://127.0.0.1:8000/sse",
+        "http://127.0.0.1:4200/sse",
         "--allow-http"
       ],
       "env": {
@@ -153,7 +153,7 @@ Then configure your MCP client to connect via `mcp-remote` (note the port is `37
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://127.0.0.1:3700/sse",
+        "http://127.0.0.1:4200/sse",
         "--allow-http"
       ],
       "env": {
