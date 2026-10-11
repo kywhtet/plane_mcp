@@ -167,3 +167,4 @@ Then configure your MCP client to connect via `mcp-remote` (note the port is `37
 ```
 
 > **Note:** Environment variables set via the JSON `env` block take priority over values in a `.env` file.
+# plane_mcp
