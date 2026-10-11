@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "plane-mcp"
 version = "0.1.0"
 description = "MCP server for Plane project management"
-readme = "CLAUDE.md"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "mcp[cli]>=1.0.0",

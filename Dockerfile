@@ -9,6 +9,7 @@ RUN apt-get update \
 
 # Copy only dependency files first for better caching
 COPY pyproject.toml .
+COPY README.md .
 COPY plane_mcp/ ./plane_mcp/
 
 RUN pip install --no-cache-dir "hatchling" && \
