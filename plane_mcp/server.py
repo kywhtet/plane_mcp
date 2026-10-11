@@ -801,15 +801,11 @@ async def list_project_members(project_id: str) -> str:
 # SSE / HTTP transport helpers
 # ──────────────────────────────────────────────
 
-def run_sse(host: str = "0.0.0.0", port: int = 4200):
+def run_sse(host: str = "0.0.0.0", port: int = 8000):
     """Run the MCP server over SSE transport."""
-    mcp.settings.host = host
-    mcp.settings.port = port
     mcp.run(transport="sse")
 
 
-def run_http(host: str = "0.0.0.0", port: int = 4200):
+def run_http(host: str = "0.0.0.0", port: int = 8000):
     """Run the MCP server over streamable HTTP transport."""
-    mcp.settings.host = host
-    mcp.settings.port = port
     mcp.run(transport="streamable-http")

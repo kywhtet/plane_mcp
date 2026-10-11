@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3700:8000"
+      - "3700:4200"
     restart: unless-stopped
     working_dir: /app
-    command: ["python", "-m", "plane_mcp", "--transport", "sse", "--host", "0.0.0.0", "--port", "8000"]
+    command: [ "python", "-m", "plane_mcp", "--transport", "sse", "--host", "0.0.0.0", "--port", "4200" ]

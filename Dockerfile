@@ -14,6 +14,6 @@ COPY plane_mcp/ ./plane_mcp/
 RUN pip install --no-cache-dir "hatchling" && \
     pip install --no-cache-dir .
 
-EXPOSE 8000
+EXPOSE 4200
 
-CMD ["python", "-m", "plane_mcp", "--transport", "sse", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "-m", "plane_mcp", "--transport", "sse", "--host", "0.0.0.0", "--port", "4200"]
