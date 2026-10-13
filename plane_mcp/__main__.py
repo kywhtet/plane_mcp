@@ -32,8 +32,14 @@ def _patch_server_session() -> None:
     auto-advances the state to Initialized, matching what the missing notification
     would have done.
     """
-    import mcp.types as _types
-    from mcp.server.session import InitializationState, ServerSession
+    try:
+        import mcp.types as _types
+        from mcp.server.session import InitializationState, ServerSession
+    except (ImportError, AttributeError):
+        logging.getLogger(__name__).debug(
+            "Skipping ServerSession patch: InitializationState not present in this MCP SDK version."
+        )
+        return
 
     _orig = ServerSession._received_request
 
