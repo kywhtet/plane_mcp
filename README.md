@@ -153,7 +153,7 @@ Then configure your MCP client to connect via `mcp-remote` (note the port is `37
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://127.0.0.1:4200/sse",
+        "http://127.0.0.1:3700/sse",
         "--allow-http"
       ],
       "env": {
