@@ -97,9 +97,9 @@ Add to your MCP client config (e.g. `claude_desktop_config.json`):
       "command": "python",
       "args": ["-m", "plane_mcp"],
       "env": {
-        "PLANE_API_KEY": "plane_api_1970250fb579422e8c3244dea78f77e0",
-        "PLANE_API_URL": "https://pm.agbisp.net",
-        "PLANE_WORKSPACE_SLUG": "intelligent-and-network-operations"
+        "PLANE_API_KEY": "your_api",
+        "PLANE_API_URL": "your url",
+        "PLANE_WORKSPACE_SLUG": "your workspace"
       }
     }
   }
@@ -127,9 +127,9 @@ Then configure your MCP client to connect via `mcp-remote`:
         "--allow-http"
       ],
       "env": {
-        "PLANE_API_KEY": "plane_api_1970250fb579422e8c3244dea78f77e0",
-        "PLANE_API_URL": "https://pm.agbisp.net",
-        "PLANE_WORKSPACE_SLUG": "intelligent-and-network-operations"
+        "PLANE_API_KEY": "your_api",
+        "PLANE_API_URL": "your url",
+        "PLANE_WORKSPACE_SLUG": "your workspace"
       }
     }
   }
@@ -157,9 +157,9 @@ Then configure your MCP client to connect via `mcp-remote` (note the port is `37
         "--allow-http"
       ],
       "env": {
-        "PLANE_API_KEY": "plane_api_1970250fb579422e8c3244dea78f77e0",
-        "PLANE_API_URL": "https://pm.agbisp.net",
-        "PLANE_WORKSPACE_SLUG": "intelligent-and-network-operations"
+        "PLANE_API_KEY": "your_api",
+        "PLANE_API_URL": "your url",
+        "PLANE_WORKSPACE_SLUG": "your workspace"
       }
     }
   }
